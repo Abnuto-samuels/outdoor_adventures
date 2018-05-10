@@ -1,4 +1,35 @@
+/*styling my grids*/
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
+
+/*styling my header section*/
 body {
-  background-color: grey; }
+  background-color: grey;
+  color: white; }
+
+/*styling my header section*/
+header {
+  background-color: black; }
+
+/*styling my nav section */
+nav {
+  padding: 30px; }
+
+nav li {
+  display: inline;
+  padding: 50px; }
+
+header a {
+  text-decoration: none; }
+header a:hover {
+  background-color: green;
+  padding: 20px;
+  border-radius: 3px; }
+header img {
+  float: left; }
+header h1 {
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
