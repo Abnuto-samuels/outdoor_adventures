@@ -7,6 +7,18 @@ header  {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
+.grid_images_profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+.grid_about_section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
 /*styling my header section*/
 body {
   background-color: $primarybgColor;
@@ -15,6 +27,7 @@ body {
 /*styling my header section*/
 header {
  background-color: $secondarybgColor;
+   border: 3px solid white;
 }
 /*styling my nav section */
 nav {
@@ -38,5 +51,19 @@ header {
   }
   h1 {
     float: left;
+  }
+}
+/*styling my images profile*/
+section {
+  text-align: center;
+  img {
+    border-radius: 5px;
+  }
+}
+/*styling my about section*/
+section {
+  .about{
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
