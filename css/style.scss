@@ -15,9 +15,8 @@ header  {
 }
 .grid_about_section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
 }
 /*Home page*/
 /*styling my header section*/
@@ -25,6 +24,10 @@ body {
   background-color: $primarybgColor;
   color: $mainColor;
   font-family: sans-serif;
+  background-image: url("TEST-HD2-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 /*styling my header section*/
 header {
@@ -40,6 +43,9 @@ nav li {
   padding: 50px;
 }
 header {
+  background-image: url("banner-blog_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   a {
     text-decoration: none;
     color: white;
@@ -47,7 +53,7 @@ header {
   }
   a:hover {
     background-color: #4CAF50;
-    padding: 20px;
+    padding: 10px;
     border-radius: 3px;
   }
   img {
@@ -100,9 +106,9 @@ header {
 /*styling my images profile*/
 section {
   text-align: center;
+  background-image: url("images/image1.jpg");
   img {
     border-radius: 5px;
-
   }
 }
 /*styling my about section*/
@@ -111,12 +117,19 @@ section {
     margin-left: 20%;
     margin-right: 20%;
   }
+  .sidebar {
+    background-color: $secondarybgColor;
+  }
 }
 /*styling my footer*/
 footer {
   background-color: $secondarybgColor;
   border: 3px solid white;
   text-align: right;
+  background-image: url("banner-blog_2.jpg");
+  p {
+    color: black;
+  }
 }
 footer div {
     width: 55px;
