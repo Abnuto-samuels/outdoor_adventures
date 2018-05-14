@@ -18,6 +18,12 @@ header  {
   grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+.grid_gallery {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+}
+
 /*Home page*/
 /*styling my header section*/
 body {
@@ -119,6 +125,22 @@ section {
   }
   .sidebar {
     background-color: $secondarybgColor;
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+    }
+    a:hover {
+      background-color: grey;
+      padding: 8px;
+
+    }
+  }
+}
+/*styling section of gallery page*/
+section {
+  h1 {
+    font-size: 50px;
   }
 }
 /*styling my footer*/
@@ -129,6 +151,7 @@ footer {
   background-image: url("banner-blog_2.jpg");
   p {
     color: black;
+    padding-right: 5px;
   }
 }
 footer div {

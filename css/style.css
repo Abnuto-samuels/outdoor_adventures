@@ -15,6 +15,11 @@ header {
   grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr 1fr 1fr; }
 
+.grid_gallery {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr; }
+
 /*Home page*/
 /*styling my header section*/
 body {
@@ -104,6 +109,17 @@ section .about {
   margin-right: 20%; }
 section .sidebar {
   background-color: black; }
+  section .sidebar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px; }
+  section .sidebar a:hover {
+    background-color: grey;
+    padding: 8px; }
+
+/*styling section of gallery page*/
+section h1 {
+  font-size: 50px; }
 
 /*styling my footer*/
 footer {
@@ -112,7 +128,8 @@ footer {
   text-align: right;
   background-image: url("banner-blog_2.jpg"); }
   footer p {
-    color: black; }
+    color: black;
+    padding-right: 5px; }
 
 footer div {
   width: 55px;
