@@ -12,6 +12,8 @@ header  {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .grid_about_section {
   display: grid;
@@ -33,6 +35,7 @@ body {
   background-image: url("TEST-HD2-1920x1080.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
 }
 /*styling my header section*/
@@ -112,10 +115,13 @@ header {
 /*styling my images profile*/
 section {
   text-align: center;
-  background-image: url("images/image1.jpg");
   img {
     border-radius: 5px;
   }
+}
+.img_tranformation {
+    transform:skew(10deg,10deg);
+
 }
 /*styling my about section*/
 section {
@@ -181,5 +187,21 @@ section {
   }
 }
 .backgroundcolor {
+  background-color: rgba(0,0,0,.3);
+}
+input[type=text]  {
+  border-radius: 10px;
+  width: 50%;
+}
+input[type=Name]  {
+  border-radius: 10px;
+  width: 50%;
+}
+input[type=email]  {
+  border-radius: 10px;
+  width: 50%;
+}
+input[type=submit] {
+  border-radius: 10px;
   background-color: grey;
 }

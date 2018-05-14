@@ -8,7 +8,9 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%; }
 
 .grid_about_section {
   display: grid;
@@ -28,7 +30,8 @@ body {
   font-family: sans-serif;
   background-image: url("TEST-HD2-1920x1080.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 /*styling my header section*/
 header {
@@ -98,10 +101,12 @@ header {
 
 /*styling my images profile*/
 section {
-  text-align: center;
-  background-image: url("images/image1.jpg"); }
+  text-align: center; }
   section img {
     border-radius: 5px; }
+
+.img_tranformation {
+  transform: skew(10deg, 10deg); }
 
 /*styling my about section*/
 section .about {
@@ -157,6 +162,22 @@ section form {
   margin-right: 25%; }
 
 .backgroundcolor {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+input[type=text] {
+  border-radius: 10px;
+  width: 50%; }
+
+input[type=Name] {
+  border-radius: 10px;
+  width: 50%; }
+
+input[type=email] {
+  border-radius: 10px;
+  width: 50%; }
+
+input[type=submit] {
+  border-radius: 10px;
   background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */
