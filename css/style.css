@@ -112,6 +112,10 @@ section {
 section .about {
   margin-left: 20%;
   margin-right: 20%; }
+  section .about p {
+    text-align: left;
+    padding-left: 3px;
+    padding-right: 3px; }
 section .sidebar {
   background-color: black; }
   section .sidebar a {
@@ -121,6 +125,8 @@ section .sidebar {
   section .sidebar a:hover {
     background-color: grey;
     padding: 8px; }
+section .backgroundcolor {
+  background-color: rgba(0, 0, 0, 0.6); }
 
 /*styling section of gallery page*/
 section h1 {
@@ -162,7 +168,7 @@ section form {
   margin-right: 25%; }
 
 .backgroundcolor {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 input[type=text] {
   border-radius: 10px;
@@ -179,5 +185,8 @@ input[type=email] {
 input[type=submit] {
   border-radius: 10px;
   background-color: grey; }
+
+/*styling my tablet*/
+/*styling my mobile*/
 
 /*# sourceMappingURL=style.css.map */
