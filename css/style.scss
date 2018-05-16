@@ -30,11 +30,6 @@ header  {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
 
 /*Home page*/
 /*styling my header section*/
@@ -244,10 +239,31 @@ input[type=submit]:hover {
 }
 /*styling my tablet*/
 @media only screen and (max-width: 640px) {
-
+  .container {
+    width: 100%;
+  }
+  header  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid_images_profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  footer {
+    img {
+      width: 5em;
+      height: 5em;
+    }
+  }
 }
 /*styling my mobile*/
 @media only screen and (max-width: 320px) {
+  .container{
+    width: 100%;
+  }
   // styling my home page
   header  {
     display: grid;
@@ -284,16 +300,15 @@ nav li {
 .grid_about_section {
   width: 60%;
 }
+.sidebar {
+  width: 60%;
+  margin-left: 20%;
+}
 // styling my footer
-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+footer{
   img {
     width: 5em;
     height: 5em;
   }
 }
-
-
 }
