@@ -27,6 +27,11 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr; }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
+
 /*Home page*/
 /*styling my header section*/
 body {
@@ -179,31 +184,32 @@ section form {
 
 input[type=text] {
   border-radius: 10px;
-  width: 80%;
-  padding: 5px; }
+  width: 50%;
+  padding: 10px; }
 
 input[type=Name] {
   border-radius: 10px;
-  width: 80%;
-  padding: 5px; }
+  width: 50%;
+  padding: 10px; }
 
 input[type=email] {
   border-radius: 10px;
-  width: 80%;
-  padding: 5px; }
+  width: 50%;
+  padding: 10px; }
 
 select {
   border-radius: 10px;
-  width: 80%;
-  padding: 5px; }
+  width: 53%;
+  padding: 10px; }
 
 textarea {
   border-radius: 10px;
-  padding: 5px; }
+  padding: 10px;
+  width: 50%; }
 
 input[type=submit] {
   border-radius: 30px;
-  width: 50%;
+  width: 20%;
   padding: 5px; }
 
 input[type=submit]:hover {
@@ -211,5 +217,43 @@ input[type=submit]:hover {
 
 /*styling my tablet*/
 /*styling my mobile*/
+@media only screen and (max-width: 320px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+
+  .grid_images_profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+
+  .grid_about_section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto; }
+
+  nav li {
+    display: flex;
+    padding: 5px; }
+
+  .grid_images_profile img {
+    width: 60%; }
+  .grid_images_profile .img_tranformation {
+    transform: skew(5deg, 5deg); }
+
+  .grid_about_section {
+    width: 60%; }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+    footer img {
+      width: 5em;
+      height: 5em; } }
 
 /*# sourceMappingURL=style.css.map */
