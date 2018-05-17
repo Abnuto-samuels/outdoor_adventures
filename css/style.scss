@@ -47,6 +47,28 @@ body {
 header {
  background-color: $secondarybgColor;
    border: 3px solid white;
+   h1 {
+     text-shadow:
+       4px 4px 1px #300000,
+       4px 6px 1px #400000,
+       4px 8px 1px #500000,
+       4px 10px 1px #600000,
+       4px 12px 1px #700000,
+       4px 14px 1px #800000,
+       4px 16px 1px #900000,
+       4px 18px 1px #A00000,
+       4px 20px 1px #B00000,
+       4px 22px 1px #C00000,
+       4px 24px 1px #D00000,
+       4px 26px 1px #E00000,
+       4px 28px 1px #F00000,
+       4px 30px 1px #FA0000,
+       4px 32px 1px #FB0000,
+       4px 34px 1px #FC0000,
+       4px 36px 1px #FD0000,
+       4px 38px 1px #FE0000,
+       4px 40px 2px #FF0000;
+   }
 }
 /*styling my nav section */
 nav {
@@ -193,7 +215,6 @@ footer {
 footer div {
     width: 55px;
     height: 21px;
-    background: red;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove 5s infinite;
@@ -223,26 +244,32 @@ input[type=text]  {
   border-radius: 10px;
   width: 50%;
   padding: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
+
 input[type=Name]  {
   border-radius: 10px;
   width: 50%;
   padding: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 input[type=email]  {
   border-radius: 10px;
   width: 50%;
   padding: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 select {
   border-radius: 10px;
   width: 53%;
   padding: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 textarea {
   border-radius: 10px;
   padding: 10px;
   width: 50%;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 input[type=submit] {
   border-radius: 30px;
@@ -251,9 +278,10 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: grey;
+  box-shadow: 3px 3px 5px 6px #ccc;
 }
 /*styling my tablet*/
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .container {
     width: 100%;
   }
@@ -275,7 +303,7 @@ input[type=submit]:hover {
   }
 }
 /*styling my mobile*/
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .container{
     width: 100%;
   }
