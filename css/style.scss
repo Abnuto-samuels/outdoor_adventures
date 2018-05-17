@@ -60,6 +60,9 @@ header {
   background-image: url("banner-blog_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  // position: sticky;
+  // top: 0;
+  // z-index: 1;
   a {
     text-decoration: none;
     color: white;
@@ -130,6 +133,10 @@ section {
 .img_tranformation {
     transform:skew(10deg,10deg);
 }
+.img_tranformation:hover {
+  transform:skew(-10deg,-10deg);
+
+}
 /*styling my about section*/
 section {
   .about{
@@ -143,11 +150,16 @@ section {
   }
   .sidebar {
     background-color: $secondarybgColor;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     a {
       text-decoration: none;
       color: white;
       padding: 10px;
+
     }
+
     a:hover {
       background-color: grey;
       padding: 8px;
@@ -156,6 +168,9 @@ section {
   }
   .backgroundcolor {
     background-color: rgba(0,0,0,0.6);
+  }
+  .backgroundcolor:hover {
+    background-color: black;
   }
 }
 /*styling section of gallery page*/
