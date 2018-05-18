@@ -312,7 +312,8 @@ input[type=submit]:hover {
   footer .footer_img {
     padding: 30px;
     padding-bottom: 10px; }
-  footer .grid_form {
+
+  .grid_form {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; } }
