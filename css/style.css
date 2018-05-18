@@ -1,9 +1,11 @@
 /*styling my grids*/
+/*my grids for header section*/
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr; }
 
+/*my grids for home page images*/
 .grid_images_profile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,16 +14,19 @@ header {
   margin-top: 5%;
   margin-bottom: 5%; }
 
+/*my grids for my about section*/
 .grid_about_section {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr 1fr 1fr; }
 
+/*my grids for my gallery page*/
 .grid_gallery {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr; }
 
+/*my grids for my form*/
 .grid_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -53,6 +58,7 @@ nav li {
   display: inline;
   padding: 50px; }
 
+/*my bg image of header section*/
 header {
   background-image: url("banner-blog_2.jpg");
   background-repeat: no-repeat;
@@ -114,6 +120,7 @@ section {
   section img {
     border-radius: 5px; }
 
+/*my animation for image profile*/
 .img_tranformation {
   transform: skew(10deg, 10deg); }
 
@@ -129,10 +136,7 @@ section .about {
     padding-left: 3px;
     padding-right: 3px; }
 section .sidebar {
-  background-color: black;
-  position: sticky;
-  top: 0;
-  z-index: 1; }
+  background-color: black; }
   section .sidebar a {
     text-decoration: none;
     color: white;
@@ -159,7 +163,7 @@ footer {
     color: black;
     padding-right: 5px; }
 
-footer div {
+.footer_img {
   width: 55px;
   height: 21px;
   position: relative;
@@ -167,6 +171,7 @@ footer div {
   /* Safari 4.0 - 8.0 */
   animation: mymove 5s infinite; }
 
+/*animation for image of footer*/
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
   from {
@@ -240,9 +245,15 @@ input[type=submit]:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr; }
 
-  footer img {
-    width: 5em;
-    height: 5em; } }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+    footer img {
+      width: 5em;
+      height: 5em; }
+      footer img .footer_img {
+        padding: 50px; } }
 /*styling my mobile*/
 @media screen and (max-width: 320px) {
   .container {
@@ -264,7 +275,7 @@ input[type=submit]:hover {
   .grid_about_section {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr auto; }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
 
   nav li {
     display: flex;
@@ -282,8 +293,28 @@ input[type=submit]:hover {
     width: 60%;
     margin-left: 20%; }
 
+  .grid_gallery {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr; }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+
   footer img {
-    width: 5em;
-    height: 5em; } }
+    width: 4em;
+    height: 4em; }
+  footer section .sidebar {
+    background-color: black;
+    position: none; }
+  footer .footer_img {
+    padding: 30px;
+    padding-bottom: 10px; }
+  footer .grid_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; } }
 
 /*# sourceMappingURL=style.css.map */
