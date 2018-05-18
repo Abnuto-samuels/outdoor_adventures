@@ -5,14 +5,14 @@ $mainColor: white;
 /*my grids for header section*/
 header  {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
 }
 /*my grids for home page images*/
 .grid_images_profile {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
   grid-gap: 10px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -21,19 +21,19 @@ header  {
 .grid_about_section {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
 }
 /*my grids for my gallery page*/
 .grid_gallery {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
 }
 /*my grids for my form*/
 .grid_form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
 }
 
 /*Home page*/
@@ -218,6 +218,11 @@ footer {
     color: black;
     padding-right: 5px;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+  }
 }
 .footer_img {
     width: 55px;
@@ -294,18 +299,18 @@ input[type=submit]:hover {
   }
   header  {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
   .grid_images_profile {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
   }
   footer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     img {
       width: 5em;
       height: 5em;
@@ -314,6 +319,10 @@ input[type=submit]:hover {
  }
     }
   }
+  .footer_img {
+      padding: 30px;
+      padding-bottom: 50px;
+    }
 }
 /*styling my mobile*/
 @media screen and (max-width: 320px) {
@@ -323,13 +332,13 @@ input[type=submit]:hover {
   // styling my home page
   header  {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
   .grid_images_profile {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
     grid-gap: 10px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -337,7 +346,7 @@ input[type=submit]:hover {
   .grid_about_section {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
   }
 nav li {
   display: flex;
@@ -364,31 +373,32 @@ nav li {
 .grid_gallery {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr; }
+  grid-template-rows: auto auto; }
 // styling my footer
 footer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
 footer{
   img {
     width: 4em;
     height: 4em;
   }
+
+}
+.footer_img {
+    padding: 30px;
+    padding-bottom: 30px;
+  }
+.grid_form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
   section .sidebar {
   background-color: black;
   position: none;
 }
-.footer_img {
-    padding: 30px;
-    padding-bottom: 10px;
-  }
-
-}
-.grid_form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr; }
 
 }
