@@ -1,3 +1,239 @@
+/*styling my large  desktop*/
+@media screen and (max-width: 1200px) {
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+
+  /*my grids for home page images*/
+  .grid_images_profile {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+
+  /*my grids for my about section*/
+  .grid_about_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto; }
+
+  /*my grids for my gallery page*/
+  .grid_gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+
+  /*my grids for my form*/
+  .grid_form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+
+  /*Home page*/
+  /*styling my header section*/
+  body {
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+    background-image: url("TEST-HD2-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  /*styling my header section*/
+  header {
+    background-color: black;
+    border: 3px solid white; }
+    header h1 {
+      text-shadow: 4px 4px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000, 4px 10px 1px #600000, 4px 12px 1px #700000, 4px 14px 1px #800000, 4px 16px 1px #900000, 4px 18px 1px #A00000, 4px 20px 1px #B00000, 4px 22px 1px #C00000, 4px 24px 1px #D00000, 4px 26px 1px #E00000, 4px 28px 1px #F00000, 4px 30px 1px #FA0000, 4px 32px 1px #FB0000, 4px 34px 1px #FC0000, 4px 36px 1px #FD0000, 4px 38px 1px #FE0000, 4px 40px 2px #FF0000; }
+
+  /*styling my nav section */
+  nav {
+    padding: 30px; }
+
+  nav li {
+    display: inline;
+    padding: 50px; }
+
+  /*my bg image of header section*/
+  header {
+    background-image: url("banner-blog_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    header a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px; }
+    header a:hover {
+      background-color: #4CAF50;
+      padding: 10px;
+      border-radius: 3px; }
+    header img {
+      float: left; }
+    header h1 {
+      float: left; }
+
+  /*styling my nav button and drop down box*/
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; }
+
+  .dropdown {
+    position: relative;
+    display: inline-block; }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+
+  .dropdown:hover .dropdown-content {
+    display: block; }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41; }
+
+  /*styling my images profile*/
+  section {
+    text-align: center; }
+    section h3 {
+      background-color: rgba(0, 0, 0, 0.6); }
+    section img {
+      border-radius: 5px; }
+
+  /*my animation for image profile*/
+  .img_tranformation {
+    transform: skew(10deg, 10deg); }
+
+  .img_tranformation:hover {
+    transform: skew(-10deg, -10deg); }
+
+  /*styling my about section*/
+  section .about {
+    margin-left: 20%;
+    margin-right: 20%; }
+    section .about p {
+      text-align: left;
+      padding-left: 3px;
+      padding-right: 3px; }
+  section .sidebar {
+    background-color: black; }
+    section .sidebar a {
+      text-decoration: none;
+      color: white;
+      padding: 10px; }
+    section .sidebar a:hover {
+      background-color: grey;
+      padding: 8px; }
+  section .backgroundcolor {
+    background-color: rgba(0, 0, 0, 0.6); }
+  section .backgroundcolor:hover {
+    background-color: black; }
+
+  /*styling section of gallery page*/
+  section h1 {
+    font-size: 50px; }
+
+  /*styling my footer*/
+  footer {
+    background-color: black;
+    border: 3px solid white;
+    text-align: right;
+    background-image: url("banner-blog_2.jpg"); }
+    footer p {
+      color: black;
+      padding-right: 5px; }
+    footer a {
+      text-decoration: none;
+      color: white;
+      background-color: black; }
+
+  .footer_img {
+    width: 55px;
+    height: 21px;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite; }
+
+  /*animation for image of footer*/
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    from {
+      left: 0px; }
+    to {
+      left: 200px; } }
+  @keyframes mymove {
+    from {
+      left: 0px; }
+    to {
+      left: 200px; } }
+  /*styling form*/
+  section form {
+    margin-left: 5%;
+    margin-right: 5%; }
+
+  .backgroundcolor {
+    background-color: rgba(0, 0, 0, 0.6); }
+
+  input[type=text] {
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc; }
+
+  input[type=Name] {
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc; }
+
+  input[type=email] {
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc; }
+
+  select {
+    border-radius: 10px;
+    width: 53%;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc; }
+
+  textarea {
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    box-shadow: 3px 3px 5px 6px #ccc; }
+
+  input[type=submit] {
+    border-radius: 30px;
+    width: 20%;
+    padding: 5px; }
+
+  input[type=submit]:hover {
+    background-color: grey;
+    box-shadow: 3px 3px 5px 6px #ccc; } }
+/*styling my desktop*/
 /*styling my grids*/
 /*my grids for header section*/
 header {
@@ -243,6 +479,9 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto; }
+
+  nav li {
+    padding: 20px; }
 
   .grid_images_profile {
     display: grid;
