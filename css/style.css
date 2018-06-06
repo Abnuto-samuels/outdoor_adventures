@@ -244,11 +244,12 @@ header {
 /*my grids for home page images*/
 .grid_images_profile {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   grid-gap: 10px;
   margin-top: 5%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  width: 70%; }
 
 /*my grids for my about section*/
 .grid_about_section {
@@ -291,7 +292,7 @@ nav {
   padding: 30px; }
 
 nav li {
-  display: inline;
+  display: inline-block;
   padding: 50px; }
 
 /*my bg image of header section*/
@@ -351,8 +352,6 @@ header {
 /*styling my images profile*/
 section {
   text-align: center; }
-  section h3 {
-    background-color: rgba(0, 0, 0, 0.6); }
   section img {
     border-radius: 5px; }
 
@@ -382,8 +381,6 @@ section .sidebar {
     padding: 8px; }
 section .backgroundcolor {
   background-color: rgba(0, 0, 0, 0.6); }
-section .backgroundcolor:hover {
-  background-color: black; }
 
 /*styling section of gallery page*/
 section h1 {
@@ -403,6 +400,27 @@ footer {
     color: white;
     background-color: black; }
 
+.scroll_button {
+  text-align: right;
+  position: sticky;
+  bottom: 1%;
+  padding-bottom: 2%; }
+  .scroll_button a {
+    background-color: grey;
+    color: white;
+    padding: 7px;
+    border-radius: 2px;
+    text-decoration: none;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 2s; }
+@keyframes scroll {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
 .footer_img {
   width: 55px;
   height: 21px;
@@ -417,12 +435,12 @@ footer {
   from {
     left: 0px; }
   to {
-    left: 200px; } }
+    left: 100px; } }
 @keyframes mymove {
   from {
     left: 0px; }
   to {
-    left: 200px; } }
+    left: 100px; } }
 /*styling form*/
 section form {
   margin-left: 5%;
@@ -471,27 +489,34 @@ input[type=submit]:hover {
   box-shadow: 3px 3px 5px 6px #ccc; }
 
 /*styling my tablet*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100%; }
 
   header {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto; }
+    grid-template-rows: auto auto;
+    width: 85%; }
 
   nav li {
-    padding: 20px; }
+    display: inline-block;
+    padding: 3em; }
 
   .grid_images_profile {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto; }
+    grid-template-rows: auto auto auto auto;
+    width: 80%; }
+
+  .grid_about_section {
+    width: 80%; }
 
   footer {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto; }
+    grid-template-rows: auto auto;
+    width: 85%; }
     footer img {
       width: 5em;
       height: 5em; }
@@ -500,16 +525,38 @@ input[type=submit]:hover {
 
   .footer_img {
     padding: 30px;
-    padding-bottom: 50px; } }
-/*styling my mobile*/
-@media screen and (max-width: 320px) {
+    padding-bottom: 50px; }
+
+  .grid_form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto; } }
+@media screen and (max-width: 411px) {
   .container {
     width: 100%; }
+
+  nav li {
+    display: block;
+    padding: 5px; }
+
+  .grid_images_profile {
+    width: 70%; }
+
+  .grid_form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto; } }
+/*styling my mobile*/
+@media screen and (max-width: 360px) {
+  .container {
+    width: 100%;
+    background-color: 0; }
 
   header {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto; }
+    grid-template-rows: auto auto;
+    width: 80%; }
 
   .grid_images_profile {
     display: grid;
@@ -517,7 +564,8 @@ input[type=submit]:hover {
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px;
     margin-top: 5%;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    width: 70%; }
 
   .grid_about_section {
     display: grid;
@@ -525,7 +573,7 @@ input[type=submit]:hover {
     grid-template-rows: auto auto auto auto auto; }
 
   nav li {
-    display: flex;
+    display: table;
     padding: 5px; }
 
   .grid_images_profile img {
@@ -548,7 +596,8 @@ input[type=submit]:hover {
   footer {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto; }
+    grid-template-rows: auto auto;
+    width: 80%; }
 
   footer img {
     width: 4em;
