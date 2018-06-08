@@ -27,7 +27,7 @@ $mainColor: white;
   .grid_gallery {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
   }
   /*my grids for my form*/
   .grid_form {
@@ -321,7 +321,7 @@ header  {
 .grid_gallery {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto;
 }
 /*my grids for my form*/
 .grid_form {
